@@ -111,7 +111,11 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.527 0.154 150.069);
 }
-
+@layer utilities {
+  .animate-pulse-extra-slow {
+    animation: pulse 15000s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
 
 @layer base {
   * {
